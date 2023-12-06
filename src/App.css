@@ -1,18 +1,16 @@
 #root {
-  max-width: 1280px;
+  max-width: 100vw;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
 .logo {
   height: 6em;
-  padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 1.3em rgb(100, 255, 108));
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -33,10 +31,87 @@
   }
 }
 
-.card {
-  padding: 2em;
+button p {
+  cursor: pointer;
 }
 
-.read-the-docs {
-  color: #888;
+.main-container {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  margin-bottom: 0;
+}
+
+.card {
+  border: 3px solid transparent;
+  border-radius: 2em;
+  background-color: #1a1a1a;
+  padding: 2em;
+  max-width: 60vw;
+  min-width: 220px;
+  transition: border-color 0.25s;
+}
+.card:hover {
+  border-color: rgb(100, 255, 108);
+}
+
+.card p {
+  text-align: start;
+}
+
+.card-title,
+.card-subtitle {
+  cursor: default;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: start;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 100vw;
+  width: 100vw;
+  background-color: #1a1a1a;
+}
+
+.image-container {
+  margin: 0 2em;
+  border-radius: 50%;
+  width: 13em;
+  height: 13em;
+  overflow: hidden;
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.error-page {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+}
+
+.contact-row img {
+  padding-right: 1em;
 }

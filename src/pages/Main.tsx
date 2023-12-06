@@ -1,34 +1,50 @@
-import React from "react";
-import { useState } from "react";
-import reactLogo from "../assets/react.svg";
-import viteLogo from "/vite.svg";
+import React, { Fragment } from "react";
+import edgarPicture from "../assets/Edgar.webp";
 import "../App.css";
-
+import SectionCard from "../components/SectionCard";
+import { motion } from "framer-motion";
+import ContactCard from "../components/ContactCard";
 const Main: React.FC = (): JSX.Element => {
-  const [count, setCount] = useState(0);
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <motion.main
+      initial={{ opacity: "0%" }}
+      animate={{ opacity: "100%" }}
+      exit={{ opacity: "0%" }}
+      transition={{ duration: 0.3, ease: "easeIn" }}
+      className="main-container"
+    >
+      <div className="image-container logo">
+        <img
+          src={edgarPicture}
+          className="picture"
+          alt="Edgar Alcolea smiling"
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <h1 className="name">Edgar Alcolea</h1>
+      <h2>Full Stack Developer</h2>
+      <div className="content-container">
+        <div className="about-me">
+          <ContactCard
+            mail="edgaralcolea@gmail.com"
+            github="https://github.com/Laulhus"
+            linkedIn="https://www.linkedin.com/in/edgaralcolea/"
+          />
+        </div>
+        <div className="contact">
+          <SectionCard
+            title="Who am I?"
+            text={
+              <Fragment>
+                My name is Edgar Alcolea, and I am a
+                <span> Fullstack developer </span>
+                passionate about creating a nice working environment and happy
+                to bring a smile along with clean, maintanable and tested code.
+              </Fragment>
+            }
+          />
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </motion.main>
   );
 };
 
