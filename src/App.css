@@ -16,14 +16,14 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
+/* @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
@@ -118,4 +118,67 @@ button p {
 
 .icon-row {
   display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.tech-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tech-icon-container:hover p {
+  opacity: 100;
+}
+.tech-icon-container p {
+  opacity: 0;
+  transition: all ease-in-out 300ms;
+}
+.app-container {
+  padding: 2em;
+  width: 80vw;
+  border: 3px solid transparent;
+  background-color: #1a1a1a;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 70vw;
+  min-width: 220px;
+  transition: border-color 0.25s;
+}
+
+.app-container:hover {
+  border-color: rgb(100, 255, 108);
+}
+.app-row {
+  border: 2px solid #ffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.app-side-section {
+  display: flex;
+  flex-direction: column;
+  flex: 0.3;
+  align-items: flex-start;
+}
+.app-side-section h2 {
+  margin-bottom: 0;
+}
+
+.app-side-section p,
+h2,
+li {
+  margin-top: 0;
+  text-align: start;
+}
+
+.store-badge {
+  transition: all ease-out 300ms;
+}
+.store-badge:hover {
+  padding-left: 1em;
 }

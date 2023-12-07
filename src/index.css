@@ -21,7 +21,8 @@ a {
 a:hover {
   color: rgb(100, 255, 108);
 }
-a p {
+a p,
+div {
   cursor: pointer;
 }
 
@@ -40,6 +41,7 @@ h1 {
 
 h2 {
   cursor: default;
+  margin-top: 0;
 }
 
 h3 {

@@ -8,8 +8,8 @@ const Experience: React.FC = (): JSX.Element => {
     <motion.main
       initial={{ y: "100%", opacity: "0%" }}
       animate={{ y: "0%", opacity: "100%" }}
-      exit={{ opacity: "0%" }}
-      transition={{ duration: 0.6, ease: "easeInOut" }}
+      exit={{ opacity: "100%" }}
+      transition={{ duration: 0.6, ease: "easeIn" }}
       className="main-container"
     >
       <h1>Experience</h1>
