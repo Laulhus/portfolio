@@ -29,6 +29,11 @@ const Main: React.FC = (): JSX.Element => {
             github="https://github.com/Laulhus"
             linkedIn="https://www.linkedin.com/in/edgaralcolea/"
           />
+          <div className="card-cv">
+            <a target="_blank" href="/Edgar-Alcolea.pdf">
+              Download CV
+            </a>
+          </div>
         </div>
         <div className="contact">
           <SectionCard

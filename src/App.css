@@ -59,7 +59,22 @@ button p {
   min-width: 220px;
   transition: border-color 0.25s;
 }
-.card:hover {
+.card-cv {
+  margin-top: 2em;
+  cursor: default;
+  border: 3px solid transparent;
+  border-radius: 2em;
+  background-color: #1a1a1a;
+  padding: 2em;
+  max-width: 100%;
+  min-width: fit-content;
+  transition: border-color 0.25s;
+}
+.card-cv a {
+  font-weight: 700;
+}
+.card:hover,
+.card-cv:hover {
   border-color: rgb(100, 255, 108);
 }
 
