@@ -36,10 +36,13 @@ button p {
 }
 
 .main-container {
-  padding: 2em;
+  cursor: default;
+  padding-top: 2em;
+  padding-bottom: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
 }
 
 .name {
@@ -47,6 +50,7 @@ button p {
 }
 
 .card {
+  cursor: default;
   border: 3px solid transparent;
   border-radius: 2em;
   background-color: #1a1a1a;
@@ -116,10 +120,18 @@ button p {
   padding-right: 1em;
 }
 
+.stack-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .icon-row {
   display: flex;
-  gap: 1em;
-  flex-wrap: wrap;
+  gap: 2em;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .tech-icon-container {
@@ -135,7 +147,7 @@ button p {
   transition: all ease-in-out 300ms;
 }
 .app-container {
-  padding: 2em;
+  padding: 3em;
   width: 80vw;
   border: 3px solid transparent;
   background-color: #1a1a1a;
@@ -143,7 +155,7 @@ button p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   max-width: 70vw;
   min-width: 220px;
   transition: border-color 0.25s;
@@ -165,8 +177,11 @@ button p {
   flex: 0.3;
   align-items: flex-start;
 }
+.app-side-section:nth-child(2) {
+  margin-right: auto;
+}
 .app-side-section h2 {
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 .app-side-section p,
@@ -174,6 +189,9 @@ h2,
 li {
   margin-top: 0;
   text-align: start;
+}
+.app-side-section img {
+  width: 140px;
 }
 
 .store-badge {
@@ -194,7 +212,7 @@ li {
     gap: 2em;
   }
   .card {
-    width: 80vw;
+    width: 100vw;
   }
   .icon-row {
     justify-content: space-evenly;
@@ -220,5 +238,9 @@ li {
   .store-badge:nth-child(1) img {
     width: 125px;
     padding-left: 0.75em;
+  }
+  .stack-container {
+    padding-top: 2em;
+    width: 80vw;
   }
 }
