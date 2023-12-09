@@ -14,7 +14,7 @@ const TechStack: React.FC = (): JSX.Element => {
     <motion.main
       initial={{ opacity: "0%" }}
       animate={{ opacity: "100%" }}
-      exit={{ opacity: "0%" }}
+      exit={{ opacity: "100%" }}
       transition={{ duration: 0.3, ease: "easeIn" }}
       className="main-container"
     >

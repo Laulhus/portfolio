@@ -21,37 +21,39 @@ const Projects: React.FC = (): JSX.Element => {
             height={130}
             src={BumerangIcon}
           ></img>
-          <div className="store-badge">
-            <a
-              target="_blank"
-              href="https://play.google.com/store/apps/details?id=com.bumerang.app&hl=es_419&gl=US&pli=1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-              rel="noreferrer"
-            >
-              <img
-                width={160}
-                alt="Get Bumerang on Google Play"
-                src="https://play.google.com/intl/es-419/badges/static/images/badges/en_badge_web_generic.png"
-              />
-            </a>
-          </div>
-          <div className="store-badge">
-            <a
-              target="_blank"
-              href="https://apps.apple.com/es/app/bumerang/id1540586577?itsct=apps_box_badge&amp;itscg=30200"
-              style={{
-                display: "inline-block",
-                overflow: "hidden",
-                borderRadius: "13px",
-              }}
-              rel="noreferrer"
-            >
-              <img
-                width={141}
-                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83&amp;releaseDate=1608163200"
-                alt="Download Bumerang on the App Store"
-                style={{ borderRadius: "13px", paddingLeft: "0.58em" }}
-              />
-            </a>
+          <div className="store-badges-container">
+            <div className="store-badge">
+              <a
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=com.bumerang.app&hl=es_419&gl=US&pli=1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                rel="noreferrer"
+              >
+                <img
+                  width={160}
+                  alt="Get Bumerang on Google Play"
+                  src="https://play.google.com/intl/es-419/badges/static/images/badges/en_badge_web_generic.png"
+                />
+              </a>
+            </div>
+            <div className="store-badge">
+              <a
+                target="_blank"
+                href="https://apps.apple.com/es/app/bumerang/id1540586577?itsct=apps_box_badge&amp;itscg=30200"
+                style={{
+                  display: "inline-block",
+                  overflow: "hidden",
+                  borderRadius: "13px",
+                }}
+                rel="noreferrer"
+              >
+                <img
+                  width={141}
+                  src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/white/en-us?size=250x83&amp;releaseDate=1608163200"
+                  alt="Download Bumerang on the App Store"
+                  style={{ borderRadius: "13px", paddingLeft: "0.58em" }}
+                />
+              </a>
+            </div>
           </div>
         </div>
         <div className="app-side-section">

@@ -182,3 +182,35 @@ li {
 .store-badge:hover {
   padding-left: 1em;
 }
+
+@media (max-width: 1023px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2em;
+  }
+  .card {
+    width: 80vw;
+  }
+  .icon-row {
+    justify-content: space-evenly;
+  }
+  .app-container {
+    gap: 2em;
+    flex-direction: column;
+    align-items: center;
+    max-width: 70vw;
+  }
+  .app-side-section:nth-child(1) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+  }
+  .store-badge:hover {
+    padding: 0;
+  }
+}

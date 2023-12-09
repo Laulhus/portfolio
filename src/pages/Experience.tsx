@@ -18,8 +18,7 @@ const Experience: React.FC = (): JSX.Element => {
           <SectionCard
             title="Software Engineer"
             subtitle="Bumerang | Apr 2022 | Barcelona, Spain"
-            text="In charge of two mobile apps built from scratch with React Native for
-Android and IOS devices, performed code maintenance, reviewing and
+            text="In charge of two mobile apps built from scratch with React Native for Android and IOS devices, performed code maintenance, reviewing and
 refactoring. Making decisions based on business needs, designing new
 features and uploading production builds to store platforms."
           ></SectionCard>
@@ -28,9 +27,9 @@ features and uploading production builds to store platforms."
           <SectionCard
             title="Full Stack Developer"
             subtitle="ISDI Coders | 2021 - 2022 | Barcelona, Spain"
-            text="Web development bootcamp where I built several full stack projects in
+            text={`Web development bootcamp where I built several full stack projects in
 Javascript on fully tested code using Jest, React testing library and
-Cypress, ensuring good practices and SOLID principles. (+1000h)"
+Cypress, ensuring good practices and SOLID principles. (+1000h)`}
           ></SectionCard>
         </li>
         <li>
