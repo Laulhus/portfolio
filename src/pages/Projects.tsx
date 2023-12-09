@@ -15,12 +15,7 @@ const Projects: React.FC = (): JSX.Element => {
       <h1>Projects</h1>
       <section className="app-container">
         <div className="app-side-section">
-          <img
-            style={{ paddingLeft: "0.58em" }}
-            width={130}
-            height={130}
-            src={BumerangIcon}
-          ></img>
+          <img src={BumerangIcon}></img>
           <div className="store-badges-container">
             <div className="store-badge">
               <a

@@ -206,11 +206,19 @@ li {
     max-width: 70vw;
   }
   .app-side-section:nth-child(1) {
+    width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 1em;
   }
   .store-badge:hover {
     padding: 0;
+  }
+  .app-side-section img {
+    width: 110px;
+  }
+  .store-badge:nth-child(1) img {
+    width: 125px;
+    padding-left: 0.75em;
   }
 }
